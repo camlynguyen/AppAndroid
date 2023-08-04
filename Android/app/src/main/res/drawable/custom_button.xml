@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+<!--    Bo góc-->
+    <solid android:color="#FF9933"/>
+
+<!--    <corners android:bottomLeftRadius="30dp"-->
+<!--        android:topRightRadius="30dp"-->
+<!--        android:topLeftRadius="30dp"-->
+<!--        android:bottomRightRadius="30dp"/>-->
+
+    <corners android:radius="10dp"/>
+
+<!--    đường viền-->
+<!--    <stroke android:color="@color/black"-->
+<!--        android:width="2dp"/>-->
+
+<!--    Pha màu góc bắt đầu là goóc 45 độ-->
+<!--    <gradient android:angle="315"-->
+<!--        android:startColor="#FF9933"-->
+<!--        android:endColor="#FF9933"/>-->
+
+</shape>

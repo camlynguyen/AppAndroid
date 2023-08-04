@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background1"
+    tools:context=".Register">
+<!--    android:background="#FFCC99"-->
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/register"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="65dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:text="Đăng Ký"/>
+
+<!--    <EditText-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:inputType="text"-->
+<!--        android:id="@+id/fullname"-->
+<!--        android:hint="Tên đăng nhập"-->
+<!--        android:maxLines="1"-->
+<!--        android:background="@drawable/custom_edittext"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:paddingStart="20dp"-->
+<!--        android:paddingEnd="0dp"/>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/name_svg">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:id="@+id/fullname"
+            android:hint="Tên đăng nhập"
+            android:maxLines="1"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <EditText-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:inputType="phone"-->
+<!--        android:id="@+id/phone"-->
+<!--        android:hint="Mobile"-->
+<!--        android:maxLines="1"-->
+<!--        android:background="@drawable/custom_edittext"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:paddingStart="20dp"-->
+<!--        android:paddingEnd="0dp"/>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/phone_svg">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            android:id="@+id/phone"
+            android:hint="Mobile"
+            android:maxLines="1"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <EditText-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:id="@+id/email"-->
+<!--        android:hint="Email"-->
+<!--        android:maxLines="1"-->
+<!--        android:background="@drawable/custom_edittext"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:paddingStart="20dp"-->
+<!--        android:paddingEnd="0dp"/>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/email_svg">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"
+            android:hint="Email"
+            android:maxLines="1"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <EditText-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:id="@+id/password"-->
+<!--        android:hint="Password"-->
+<!--        android:maxLines="1"-->
+<!--        android:background="@drawable/custom_edittext"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:paddingStart="20dp"-->
+<!--        android:paddingEnd="0dp"/>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/password_svg"
+        app:passwordToggleEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:maxLines="1"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <EditText-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:id="@+id/conPassword"-->
+<!--        android:hint="Nhập lại Password"-->
+<!--        android:maxLines="1"-->
+<!--        android:background="@drawable/custom_edittext"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:paddingStart="20dp"-->
+<!--        android:paddingEnd="0dp"/>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/password_svg"
+        app:passwordToggleEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:id="@+id/conPassword"
+            android:hint="Nhập lại Password"
+            android:maxLines="1"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_button"
+        android:textSize="18dp"
+        android:text="Đăng ký"
+
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#CC000000"
+            android:text="Đăng ký tài khoản?"/>
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/loginNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#CC3300"
+            android:text="Đăng Nhập"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

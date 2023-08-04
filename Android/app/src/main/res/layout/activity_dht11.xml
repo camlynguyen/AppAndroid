@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".DHT11">
+
+
+    <Button
+        android:id="@+id/btnOutDHT"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/left_round"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:backgroundTint="#ECFAF5"
+        app:cardElevation="2dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="25dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhiệt Độ"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txtper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/Black"
+            android:layout_marginTop="170dp"
+            android:textSize="16dp"/>
+
+        <ProgressBar
+            android:id="@+id/Prog"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="0dp"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progress="75"
+            android:progressDrawable="@drawable/circle"
+            tools:progress="1"></ProgressBar>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:backgroundTint="#ECFAF5"
+        app:cardElevation="2dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="25dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Độ Ẩm"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txtper2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:textColor="@color/Black"
+            android:textSize="16dp"/>
+
+        <ProgressBar
+            android:id="@+id/Prog2"
+            android:layout_marginTop="60dp"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:indeterminateOnly="false"
+            tools:progress="1"
+            android:max="100"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="0dp"
+            android:progressDrawable="@drawable/circle"
+            android:progress="75"
+            >
+        </ProgressBar>
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btnCal"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="49dp"-->
+<!--            android:layout_marginTop="300dp"-->
+<!--            android:backgroundTint="#258344"-->
+<!--            android:inputType="textCapSentences"-->
+<!--            android:elevation="10dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="Calculate"-->
+<!--            android:shadowColor="#7061D7"-->
+<!--            android:textColor="@color/White"-->
+<!--            android:textSize="17sp"-->
+<!--            android:textStyle="bold" />-->
+
+    </androidx.cardview.widget.CardView>
+
+<!--    android:textColorHint="#A5A5A5"-->
+
+
+</LinearLayout>
