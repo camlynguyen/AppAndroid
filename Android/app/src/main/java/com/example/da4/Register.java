@@ -110,47 +110,6 @@ public class Register extends AppCompatActivity {
             }
         });
 
-
-
-//        ////////        //////////đăng nhập gửi mã OTP
-//
-//        registerBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                final  String getMobileTxt = phone.getText().toString();
-//                final  String getEmailTxt = email.getText().toString();
-//
-//                //open OTP Verification Activity along with mobile and email
-//                Intent intent = new Intent(Register.this, OTPVerification.class);
-//
-//                intent.putExtra("Phone",getMobileTxt);
-//                intent.putExtra("Email",getEmailTxt);
-//
-//                startActivity(intent);
-////              finish();
-//            }
-//        });
-
-//        registerBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                final  String getMobileTxt = phone.getText().toString();
-//
-//                //open OTP Verification Activity along with mobile and email
-//                Intent intent = new Intent(Register.this, NhapOTP.class);
-//
-//                intent.putExtra("Phone",getMobileTxt);
-//
-//                startActivity(intent);
-////              finish();
-//            }
-//        });
-
-//
-
-        ////////////////////////////////////////
-
-
         //////////////////////////////////////////////////////////////////////////////////////////Ban đầu
         loginNowBtn.setOnClickListener(new View.OnClickListener() {
             @Override
